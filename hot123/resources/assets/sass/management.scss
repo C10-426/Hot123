@@ -1,0 +1,12 @@
+$size-base: 8px;
+
+.management {
+    &-btn {
+        position: absolute;
+        top: 20%;
+        right: $size-base * 3;
+    }
+    &-menu {
+        width: $size-base * 30;
+    }
+}
