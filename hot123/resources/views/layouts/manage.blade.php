@@ -33,21 +33,37 @@
 
     <div class="management-menu">
         <ul class="list-group">
-            <li class="dropdown-header">Site</li>
-            <li class="list-group-item"><a href="#">Dashboard</a></li>
-            <li class="list-group-item"><a href="#">Lists</a></li>
-            <li role="separator" class="divider"></li>
-            <li class="dropdown-header">Advertise</li>
-            <li class="list-group-item"><a href="#">Dashboard</a></li>
-            <li class="list-group-item"><a href="#">Lists</a></li>
-            <li role="separator" class="divider"></li>
-            <li class="dropdown-header">Others</li>
-            <li class="list-group-item"><a href="#">Dashboard</a></li>
-            <li class="list-group-item"><a href="#">Lists</a></li>
+            <li class="list-group-item">
+                <ul class="list-group">
+                    <li class="dropdown-header">Site</li>
+                    <li class="list-group-item management-menu-item">Dashboard</li>
+                    <li class="list-group-item management-menu-item">Lists</li>
+                </ul>
+            </li>
+            <li class="list-group-item">
+                <ul class="list-group">
+                    <li class="dropdown-header">Advertise</li>
+                    <li class="list-group-item management-menu-item">Dashboard</li>
+                    <li class="list-group-item management-menu-item">Lists</li>
+                </ul>
+            </li>            
+            <li class="list-group-item">
+                <ul class="list-group">
+                    <li class="dropdown-header">Others</li>
+                    <li class="list-group-item management-menu-item">Dashboard</li>
+                    <li class="list-group-item management-menu-item">Lists</li>
+                </ul>
+            </li>
         </ul>
     </div>
 
-    @yield('content')
+    <div class="management-content">
+        <div class="panel panel-default">
+            <div class="panel-body">
+                @yield('content')
+            </div>
+        </div>
+    </div>
 
 </body>
 </html>

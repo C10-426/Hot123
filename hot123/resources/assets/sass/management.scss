@@ -1,4 +1,5 @@
 $size-base: 8px;
+$link-color: #4285f4;
 
 .management {
     &-btn {
@@ -7,6 +8,20 @@ $size-base: 8px;
         right: $size-base * 3;
     }
     &-menu {
-        width: $size-base * 30;
+        width: $size-base * 35;
+        position: fixed;
+        top: $size-base * 20;
+        left: $size-base * 3;
+        &-item {
+            &:hover {
+                color: $link-color;
+                cursor: pointer;
+            }
+        }
+    }
+
+    &-content {
+        width: $size-base * 128;
+        margin: $size-base*10 auto auto auto;
     }
 }
