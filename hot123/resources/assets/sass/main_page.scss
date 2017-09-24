@@ -1,51 +1,14 @@
-$size-base: 8px;
-$content-size: 1024px;
 .main-page {
     &-nav {
         &-container {
-            width: $content-size;
+            width: 1024px;
             margin: auto;
         }
     }
-    &-head-ad {
-        width: $content-size;
-        margin: $size-base*3 auto $size-base*3 auto;
-        border: 1px solid #e7e7e7;
-        min-height: $size-base*30;
-        max-height: $size-base*50;
-        word-wrap: break-word; 
-        word-break: normal; 
-        padding: $size-base;
-    }
-
-    &-left-ad {
-        position: fixed;
-        top: $size-base*8;
-        left: $size-base*3;
-        min-width: $size-base*10;
-        max-width: $size-base*15;
-        min-height: $size-base*30;
-        border: 1px solid #e7e7e7;
-        word-wrap: break-word; 
-        word-break: normal;
-        padding: $size-base; 
-    }
-
-    &-right-ad {
-        position: fixed;
-        top: $size-base*8;
-        right: $size-base*3;
-        min-width: $size-base*10;
-        max-width: $size-base*15;
-        min-height: $size-base*30;
-        border: 1px solid #e7e7e7;
-        word-wrap: break-word; 
-        word-break: normal; 
-        padding: $size-base;
-    }
 
     &-content {
-        width: $content-size;
-        margin: auto;
+        margin-top: 24px;
+        width: 100%;
+        position: relative;
     }
 }

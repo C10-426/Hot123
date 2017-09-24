@@ -1,0 +1,39 @@
+$size-base: 8px;
+$content-size: 1024px;
+
+.index {
+    &-container {
+        width: 100%;
+    }
+
+    &-ad {
+        display: flex;
+        flex-direction: column;
+        width: $content-size;
+        margin: auto;
+    }
+
+    &-short-ad {
+        display: flex;
+    }
+
+    &-shortest-ad {
+        display: flex;
+    }
+
+    &-left-ad {
+        display: flex;
+        flex-direction: column;
+        position: fixed;
+        top: $size-base*10;
+        left: $size-base*3;
+    }
+
+    &-right-ad {
+        display: flex;
+        flex-direction: column;
+        position: fixed;
+        top: $size-base*10;
+        right: $size-base*3;
+    }
+}

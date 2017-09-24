@@ -2,5 +2,6 @@
     "/js/app.js": "/js/app.js",
     "/css/app.css": "/css/app.css",
     "/css/management.css": "/css/management.css",
-    "/css/main_page.css": "/css/main_page.css"
+    "/css/main_page.css": "/css/main_page.css",
+    "/css/index.css": "/css/index.css"
 }
