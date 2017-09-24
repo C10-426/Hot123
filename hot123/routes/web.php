@@ -18,14 +18,6 @@ Route::get('/', function () {
 */
 
 Route::get('/', 'HomeController@index');
-
-Route::group(['middleware' => 'auth', 'namespace' => 'Admin', 'prefix' => 'admin'], function(){
-    Route::get('/admin', 'HomeController@index');
-    // Route::get('article', 'ArticleController@index');
-    // Route::resource('article', 'ArticleController');
-});
-
-
 Route::group(['prefix' => 'admin'], function () {
     Voyager::routes();
 });
