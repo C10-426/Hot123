@@ -14,8 +14,13 @@ class CreateSitesTable extends Migration
     public function up()
     {
         Schema::create('sites', function (Blueprint $table) {
-            $table->increments('id');
-            $table->timestamps();
+            $table->increments('id');     
+            $table->string('link_name');            
+            $table->string('link_url');                       
+            $table->integer('link_type');                     
+            $table->string('link_description')->nullable();            
+            $table->timestamp('created_at')->default(\DB::raw('CURRENT_TIMESTAMP'));            
+            $table->timestamp('updated_at')->default(\DB::raw('CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP')); 
         });
     }
 
