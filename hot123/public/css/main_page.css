@@ -1,1 +1,11 @@
-.main-page-nav-container{width:1024px;margin:auto}.main-page-content{margin-top:24px;width:100%;position:relative}
+.main-page-nav-container {
+  width: 1024px;
+  margin: auto;
+}
+
+.main-page-content {
+  margin-top: 24px;
+  width: 100%;
+  position: relative;
+}
+
