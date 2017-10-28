@@ -12,6 +12,17 @@
     <link href="//cdn.bootcss.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet">
     <script src="//cdn.bootcss.com/jquery/1.11.1/jquery.min.js"></script>
     <script src="//cdn.bootcss.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+
+    <script>
+        var _hmt = _hmt || [];
+        (function() {
+            var hm = document.createElement("script");
+            hm.src = "https://hm.baidu.com/hm.js?4720f99ea74ffb6539d6f421c83dce94";
+            var s = document.getElementsByTagName("script")[0]; 
+            s.parentNode.insertBefore(hm, s);
+        })();
+    </script>
+
 </head>
 <body id="main-page-layout">
     <nav class="main-page-nav navbar navbar-default">
