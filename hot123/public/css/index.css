@@ -1,1 +1,88 @@
-.index-container{width:100%}.index-ad{-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-direction:column;flex-direction:column;width:1024px;margin:auto}.index-ad,.index-short-ad,.index-shortest-ad{display:-webkit-box;display:-ms-flexbox;display:flex}.index-left-ad{left:24px}.index-left-ad,.index-right-ad{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-direction:column;flex-direction:column;position:fixed;top:80px}.index-right-ad{right:24px}
+.index-container {
+  width: 100%;
+}
+
+.index-ad {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 1024px;
+  margin: auto;
+}
+
+.index-short-ad {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.index-shortest-ad {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.index-left-ad {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  position: fixed;
+  top: 80px;
+  left: 24px;
+}
+
+.index-right-ad {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  position: fixed;
+  top: 80px;
+  right: 24px;
+}
+
+.sites {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 1024px;
+  margin: 24px auto 0 auto;
+}
+
+.sites-unit-board-row {
+  padding: 8px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.sites-unit-board-row-item {
+  width: 16.6%;
+  overflow: hidden;
+  color: #333;
+}
+
+.sites-unit-board-row-item a {
+  color: #333;
+}
+
+.sites-unit-board-row-item a:hover {
+  color: #2a6496;
+  text-decoration: underline;
+}
+

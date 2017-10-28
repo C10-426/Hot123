@@ -37,3 +37,27 @@ $content-size: 1024px;
         right: $size-base*3;
     }
 }
+
+.sites {
+    display: flex;
+    flex-direction: column;
+    width: $content-size;
+    margin: $size-base*3 auto 0 auto;
+
+    &-unit-board-row {
+        padding: $size-base 0;
+        display: flex;
+        &-item {
+            width: 16.6%;
+            overflow: hidden;
+            color: #333;
+            & a {
+                color: #333;
+                &:hover {
+                    color: #2a6496;
+                    text-decoration: underline;
+                }
+            }
+        }
+    }
+}

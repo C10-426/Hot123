@@ -12,5 +12,9 @@ class SiteSeeder extends Seeder
     public function run()
     {
         //
+        DB::table('sites')->delete();
+        \App\Site::create([
+            
+        ]);
     }
 }
