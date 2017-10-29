@@ -41,10 +41,25 @@ class HomeController extends Controller
             ->where('advertise_types.id', '=', 3)
             ->get();
 
-        // get sites
-        $sites =  \DB::table('sites')
-            ->select('link_name', 'link_url', 'link_type', 'link_description')
-            ->limit(36)
+        // get adult sites
+        $adult_sites = \DB::table('sites')
+            ->select('link_name', 'link_url', 'link_description')
+            ->where('link_type', '=', 1)
+            ->limit(30)
+            ->get();
+
+        // get tv sites
+        $tv_sites = \DB::table('sites')
+            ->select('link_name', 'link_url', 'link_description')
+            ->where('link_type', '=', 2)
+            ->limit(30)
+            ->get();
+
+        // get tv sites
+        $novel_sites = \DB::table('sites')
+            ->select('link_name', 'link_url', 'link_description')
+            ->where('link_type', '=', 3)
+            ->limit(30)
             ->get();
 
         return view('index', [
@@ -53,7 +68,9 @@ class HomeController extends Controller
             'long_fixed_ad' => $long_fixed_ad,
             'short_fixed_ad' => $short_fixed_ad,
             'shortest_fixed_ad' => $shortest_fixed_ad,
-            'sites' => $sites
+            'adult_sites' => $adult_sites,
+            'tv_sites' => $tv_sites,
+            'novel_sites' => $novel_sites
             ]);
     }
 }

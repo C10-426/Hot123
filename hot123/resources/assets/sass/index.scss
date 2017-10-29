@@ -44,18 +44,30 @@ $content-size: 1024px;
     width: $content-size;
     margin: $size-base*3 auto 0 auto;
 
-    &-unit-board-row {
-        padding: $size-base 0;
-        display: flex;
-        &-item {
-            width: 16.6%;
-            overflow: hidden;
-            color: #333;
-            & a {
+    &-unit {
+        &-title {
+            width: 160px;
+            color: white;
+            background-color: #337ab7;
+            -moz-box-shadow: 4px 4px 7px #888888; /* 老的 Firefox */
+            box-shadow: 4px 4px 7px #888888;
+            font-size: 24px;
+            text-align: center;
+            margin-bottom: 1px;
+        }
+        &-board-row {
+            padding: $size-base 0;
+            display: flex;
+            &-item {
+                width: 16.6%;
+                overflow: hidden;
                 color: #333;
-                &:hover {
-                    color: #2a6496;
-                    text-decoration: underline;
+                & a {
+                    color: #333;
+                    &:hover {
+                        color: #2a6496;
+                        text-decoration: underline;
+                    }
                 }
             }
         }
