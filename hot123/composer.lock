@@ -4,8 +4,12 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
+<<<<<<< HEAD
     "hash": "1d093a0f5c710bde7ecf4fa8cc7c56f6",
     "content-hash": "1dceda10496f04520360013b940468c4",
+=======
+    "content-hash": "387f9d855b13d14e776a7699272cf180",
+>>>>>>> origin/master
     "packages": [
         {
             "name": "arrilot/laravel-widgets",
@@ -66,7 +70,11 @@
                 "laravel",
                 "widgets"
             ],
+<<<<<<< HEAD
             "time": "2017-10-05 23:02:35"
+=======
+            "time": "2017-10-05T23:02:35+00:00"
+>>>>>>> origin/master
         },
         {
             "name": "composer/ca-bundle",
@@ -1278,7 +1286,11 @@
                 "json",
                 "schema"
             ],
+<<<<<<< HEAD
             "time": "2017-10-21 13:15:38"
+=======
+            "time": "2017-10-21T13:15:38+00:00"
+>>>>>>> origin/master
         },
         {
             "name": "larapack/doctrine-support",
@@ -1372,16 +1384,16 @@
         },
         {
             "name": "larapack/voyager-hooks",
-            "version": "v1.0.3",
+            "version": "v1.0.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/larapack/voyager-hooks.git",
-                "reference": "ad4107167d6eca8e348dfd7e6fa3774fff4afec0"
+                "reference": "7843095c17a5f776704c06dff19d26cd2abc9d01"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://files.phpcomposer.com/files/larapack/voyager-hooks/ad4107167d6eca8e348dfd7e6fa3774fff4afec0.zip",
-                "reference": "ad4107167d6eca8e348dfd7e6fa3774fff4afec0",
+                "url": "https://files.phpcomposer.com/files/larapack/voyager-hooks/7843095c17a5f776704c06dff19d26cd2abc9d01.zip",
+                "reference": "7843095c17a5f776704c06dff19d26cd2abc9d01",
                 "shasum": ""
             },
             "require": {
@@ -1391,6 +1403,13 @@
                 "orchestra/testbench": "~3.0"
             },
             "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Larapack\\VoyagerHooks\\VoyagerHooksServiceProvider"
+                    ]
+                }
+            },
             "autoload": {
                 "psr-4": {
                     "Larapack\\VoyagerHooks\\": "src/"
@@ -1413,20 +1432,24 @@
                 "laravel",
                 "voyager"
             ],
+<<<<<<< HEAD
             "time": "2017-09-22 16:10:18"
+=======
+            "time": "2017-10-25T06:42:36+00:00"
+>>>>>>> origin/master
         },
         {
             "name": "laravel/framework",
-            "version": "v5.5.4",
+            "version": "v5.5.19",
             "source": {
                 "type": "git",
                 "url": "https://github.com/laravel/framework.git",
-                "reference": "d3e0493bead126cf7fb9a005c64e6b58a9190e51"
+                "reference": "c678100e84934ec85c9f8bc26bd0a60222682719"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://files.phpcomposer.com/files/laravel/framework/d3e0493bead126cf7fb9a005c64e6b58a9190e51.zip",
-                "reference": "d3e0493bead126cf7fb9a005c64e6b58a9190e51",
+                "url": "https://files.phpcomposer.com/files/laravel/framework/c678100e84934ec85c9f8bc26bd0a60222682719.zip",
+                "reference": "c678100e84934ec85c9f8bc26bd0a60222682719",
                 "shasum": ""
             },
             "require": {
@@ -1467,7 +1490,6 @@
                 "illuminate/database": "self.version",
                 "illuminate/encryption": "self.version",
                 "illuminate/events": "self.version",
-                "illuminate/exception": "self.version",
                 "illuminate/filesystem": "self.version",
                 "illuminate/hashing": "self.version",
                 "illuminate/http": "self.version",
@@ -1545,7 +1567,11 @@
                 "framework",
                 "laravel"
             ],
+<<<<<<< HEAD
             "time": "2017-09-13 13:36:29"
+=======
+            "time": "2017-10-25T19:10:45+00:00"
+>>>>>>> origin/master
         },
         {
             "name": "laravel/tinker",
@@ -1965,7 +1991,61 @@
                 "pseudorandom",
                 "random"
             ],
+<<<<<<< HEAD
             "time": "2017-09-27 21:40:39"
+=======
+            "time": "2017-09-27T21:40:39+00:00"
+        },
+        {
+            "name": "predis/predis",
+            "version": "v1.1.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/nrk/predis.git",
+                "reference": "f0210e38881631afeafb56ab43405a92cafd9fd1"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://files.phpcomposer.com/files/nrk/predis/f0210e38881631afeafb56ab43405a92cafd9fd1.zip",
+                "reference": "f0210e38881631afeafb56ab43405a92cafd9fd1",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.9"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "~4.8"
+            },
+            "suggest": {
+                "ext-curl": "Allows access to Webdis when paired with phpiredis",
+                "ext-phpiredis": "Allows faster serialization and deserialization of the Redis protocol"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Predis\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Daniele Alessandri",
+                    "email": "suppakilla@gmail.com",
+                    "homepage": "http://clorophilla.net"
+                }
+            ],
+            "description": "Flexible and feature-complete Redis client for PHP and HHVM",
+            "homepage": "http://github.com/nrk/predis",
+            "keywords": [
+                "nosql",
+                "predis",
+                "redis"
+            ],
+            "time": "2016-06-16T16:22:20+00:00"
+>>>>>>> origin/master
         },
         {
             "name": "psr/container",
@@ -2232,7 +2312,11 @@
                 "interactive",
                 "shell"
             ],
+<<<<<<< HEAD
             "time": "2017-10-19 06:13:20"
+=======
+            "time": "2017-10-19T06:13:20+00:00"
+>>>>>>> origin/master
         },
         {
             "name": "ramsey/uuid",
@@ -2314,7 +2398,11 @@
                 "identifier",
                 "uuid"
             ],
+<<<<<<< HEAD
             "time": "2017-09-22 20:46:04"
+=======
+            "time": "2017-09-22T20:46:04+00:00"
+>>>>>>> origin/master
         },
         {
             "name": "seld/cli-prompt",
@@ -2510,7 +2598,11 @@
                 "mail",
                 "mailer"
             ],
+<<<<<<< HEAD
             "time": "2017-09-30 22:39:41"
+=======
+            "time": "2017-09-30T22:39:41+00:00"
+>>>>>>> origin/master
         },
         {
             "name": "symfony/console",
@@ -2578,7 +2670,11 @@
             ],
             "description": "Symfony Console Component",
             "homepage": "https://symfony.com",
+<<<<<<< HEAD
             "time": "2017-10-02 06:42:24"
+=======
+            "time": "2017-10-02T06:42:24+00:00"
+>>>>>>> origin/master
         },
         {
             "name": "symfony/css-selector",
@@ -2631,7 +2727,11 @@
             ],
             "description": "Symfony CssSelector Component",
             "homepage": "https://symfony.com",
+<<<<<<< HEAD
             "time": "2017-10-02 06:42:24"
+=======
+            "time": "2017-10-02T06:42:24+00:00"
+>>>>>>> origin/master
         },
         {
             "name": "symfony/debug",
@@ -2687,7 +2787,11 @@
             ],
             "description": "Symfony Debug Component",
             "homepage": "https://symfony.com",
+<<<<<<< HEAD
             "time": "2017-10-02 06:42:24"
+=======
+            "time": "2017-10-02T06:42:24+00:00"
+>>>>>>> origin/master
         },
         {
             "name": "symfony/event-dispatcher",
@@ -2750,7 +2854,11 @@
             ],
             "description": "Symfony EventDispatcher Component",
             "homepage": "https://symfony.com",
+<<<<<<< HEAD
             "time": "2017-10-02 06:42:24"
+=======
+            "time": "2017-10-02T06:42:24+00:00"
+>>>>>>> origin/master
         },
         {
             "name": "symfony/filesystem",
@@ -2799,7 +2907,11 @@
             ],
             "description": "Symfony Filesystem Component",
             "homepage": "https://symfony.com",
+<<<<<<< HEAD
             "time": "2017-10-03 13:33:10"
+=======
+            "time": "2017-10-03T13:33:10+00:00"
+>>>>>>> origin/master
         },
         {
             "name": "symfony/finder",
@@ -2848,7 +2960,11 @@
             ],
             "description": "Symfony Finder Component",
             "homepage": "https://symfony.com",
+<<<<<<< HEAD
             "time": "2017-10-02 06:42:24"
+=======
+            "time": "2017-10-02T06:42:24+00:00"
+>>>>>>> origin/master
         },
         {
             "name": "symfony/http-foundation",
@@ -2901,7 +3017,11 @@
             ],
             "description": "Symfony HttpFoundation Component",
             "homepage": "https://symfony.com",
+<<<<<<< HEAD
             "time": "2017-10-05 23:10:23"
+=======
+            "time": "2017-10-05T23:10:23+00:00"
+>>>>>>> origin/master
         },
         {
             "name": "symfony/http-kernel",
@@ -2987,7 +3107,11 @@
             ],
             "description": "Symfony HttpKernel Component",
             "homepage": "https://symfony.com",
+<<<<<<< HEAD
             "time": "2017-10-05 23:40:19"
+=======
+            "time": "2017-10-05T23:40:19+00:00"
+>>>>>>> origin/master
         },
         {
             "name": "symfony/polyfill-mbstring",
@@ -3046,7 +3170,11 @@
                 "portable",
                 "shim"
             ],
+<<<<<<< HEAD
             "time": "2017-10-11 12:05:26"
+=======
+            "time": "2017-10-11T12:05:26+00:00"
+>>>>>>> origin/master
         },
         {
             "name": "symfony/process",
@@ -3095,7 +3223,11 @@
             ],
             "description": "Symfony Process Component",
             "homepage": "https://symfony.com",
+<<<<<<< HEAD
             "time": "2017-10-02 06:42:24"
+=======
+            "time": "2017-10-02T06:42:24+00:00"
+>>>>>>> origin/master
         },
         {
             "name": "symfony/routing",
@@ -3173,7 +3305,11 @@
                 "uri",
                 "url"
             ],
+<<<<<<< HEAD
             "time": "2017-10-02 07:25:00"
+=======
+            "time": "2017-10-02T07:25:00+00:00"
+>>>>>>> origin/master
         },
         {
             "name": "symfony/translation",
@@ -3238,7 +3374,11 @@
             ],
             "description": "Symfony Translation Component",
             "homepage": "https://symfony.com",
+<<<<<<< HEAD
             "time": "2017-10-02 06:42:24"
+=======
+            "time": "2017-10-02T06:42:24+00:00"
+>>>>>>> origin/master
         },
         {
             "name": "symfony/var-dumper",
@@ -3306,7 +3446,11 @@
                 "debug",
                 "dump"
             ],
+<<<<<<< HEAD
             "time": "2017-10-02 06:42:24"
+=======
+            "time": "2017-10-02T06:42:24+00:00"
+>>>>>>> origin/master
         },
         {
             "name": "tcg/voyager",
@@ -3372,7 +3516,11 @@
                 "laravel",
                 "panel"
             ],
+<<<<<<< HEAD
             "time": "2017-10-24 13:57:24"
+=======
+            "time": "2017-10-24T13:57:24+00:00"
+>>>>>>> origin/master
         },
         {
             "name": "tijsverkoyen/css-to-inline-styles",
@@ -3529,16 +3677,16 @@
         },
         {
             "name": "filp/whoops",
-            "version": "2.1.10",
+            "version": "2.1.12",
             "source": {
                 "type": "git",
                 "url": "https://github.com/filp/whoops.git",
-                "reference": "ffbbd2c06c64b08fb47974eed5dbce4ca2bb0eec"
+                "reference": "a99f0b151846021ba7a73b4e3cba3ebc9f14f03e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://files.phpcomposer.com/files/filp/whoops/ffbbd2c06c64b08fb47974eed5dbce4ca2bb0eec.zip",
-                "reference": "ffbbd2c06c64b08fb47974eed5dbce4ca2bb0eec",
+                "url": "https://files.phpcomposer.com/files/filp/whoops/a99f0b151846021ba7a73b4e3cba3ebc9f14f03e.zip",
+                "reference": "a99f0b151846021ba7a73b4e3cba3ebc9f14f03e",
                 "shasum": ""
             },
             "require": {
@@ -3583,10 +3731,14 @@
                 "exception",
                 "handling",
                 "library",
-                "whoops",
-                "zf2"
+                "throwable",
+                "whoops"
             ],
+<<<<<<< HEAD
             "time": "2017-08-03 18:23:40"
+=======
+            "time": "2017-10-15T13:05:10+00:00"
+>>>>>>> origin/master
         },
         {
             "name": "fzaninotto/faker",
@@ -3791,7 +3943,11 @@
                 "object",
                 "object graph"
             ],
+<<<<<<< HEAD
             "time": "2017-10-19 19:58:43"
+=======
+            "time": "2017-10-19T19:58:43+00:00"
+>>>>>>> origin/master
         },
         {
             "name": "phar-io/manifest",
@@ -4356,16 +4512,16 @@
         },
         {
             "name": "phpunit/phpunit",
-            "version": "6.3.0",
+            "version": "6.4.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/sebastianbergmann/phpunit.git",
-                "reference": "9501bab711403a1ab5b8378a8adb4ec3db3debdb"
+                "reference": "06b28548fd2b4a20c3cd6e247dc86331a7d4db13"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://files.phpcomposer.com/files/sebastianbergmann/phpunit/9501bab711403a1ab5b8378a8adb4ec3db3debdb.zip",
-                "reference": "9501bab711403a1ab5b8378a8adb4ec3db3debdb",
+                "url": "https://files.phpcomposer.com/files/sebastianbergmann/phpunit/06b28548fd2b4a20c3cd6e247dc86331a7d4db13.zip",
+                "reference": "06b28548fd2b4a20c3cd6e247dc86331a7d4db13",
                 "shasum": ""
             },
             "require": {
@@ -4410,7 +4566,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "6.3.x-dev"
+                    "dev-master": "6.4.x-dev"
                 }
             },
             "autoload": {
@@ -4436,7 +4592,11 @@
                 "testing",
                 "xunit"
             ],
+<<<<<<< HEAD
             "time": "2017-08-04 05:20:39"
+=======
+            "time": "2017-10-16T13:18:59+00:00"
+>>>>>>> origin/master
         },
         {
             "name": "phpunit/phpunit-mock-objects",
