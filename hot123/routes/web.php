@@ -18,6 +18,7 @@ Route::get('/', function () {
 */
 
 Route::get('/', 'HomeController@index');
+Route::get('/search', 'HomeController@search');
 Route::group(['prefix' => 'admin'], function () {
     Voyager::routes();
 });

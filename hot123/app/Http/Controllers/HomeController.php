@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Input;
 
 class HomeController extends Controller
 {
@@ -72,5 +73,11 @@ class HomeController extends Controller
             'tv_sites' => $tv_sites,
             'novel_sites' => $novel_sites
             ]);
+    }
+
+    public function search() {
+        return view('layouts/search', [
+            'kw' => Input::get('kw')
+        ]);
     }
 }
