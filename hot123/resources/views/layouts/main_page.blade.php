@@ -47,6 +47,12 @@
                     <img alt="logo" src="...">
                 </a>
             </div>
+
+            
+            <form class="search" action="http://www.qidian.com/search?kw=" method="get" target="_blank" padding: 70px>
+                <input class="search-field" type="text" name="kw" />
+                <input type="submit" value="搜索" />
+            </form>
         </div>
     </nav>
 
