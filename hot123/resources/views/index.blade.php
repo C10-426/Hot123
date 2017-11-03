@@ -36,6 +36,17 @@
                 @include('subviews.site_board')
             </div>
 
+            <div class="index-search-container">
+                <form id="sf" action="http://v.yizhansou.com/search" accept-charset="UTF-8" onsubmit="document.charset='UTF-8'" target="_black">
+                    <div class="input-group">
+                            <input class="form-control" placeholder="Search for..." id="kw" name="kw" type="text">
+                            <span class="input-group-btn">
+                                <button class="btn btn-default" type="submit">搜索</button>
+                            </span>
+                    </div>
+                </form>
+            </div>
+
             <div class="sites-unit">
                 <div class="sites-unit-title">欧美剧</div>
                 @php
