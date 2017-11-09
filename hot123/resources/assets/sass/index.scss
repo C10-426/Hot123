@@ -72,4 +72,11 @@ $content-size: 1024px;
             }
         }
     }
+
+    &-search {
+        &-container {
+            width: 35%;
+            margin: $size-base auto;
+        }
+    }
 }
